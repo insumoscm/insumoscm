@@ -1,14 +1,30 @@
+import React from "react";
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InsumosCM</title>
-</head>
-<body style="font-family: sans-serif; text-align: center; padding: 50px;">
-    <h1>Bienvenido a InsumosCM</h1>
-    <p>Somos tu departamento de compras externo.</p>
-    <p>Pronto más info en esta web.</p>
-</body>
-</html>
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-white text-red-600">
+      <section className="flex flex-col items-center justify-center h-screen bg-[url('/banner.jpg')] bg-cover bg-center text-center px-4">
+        <h1 className="text-4xl md:text-6xl font-bold drop-shadow-md">
+          Tu departamento de compras externo
+        </h1>
+        <p className="mt-4 text-lg md:text-2xl max-w-xl">
+          Encontramos lo que tu empresa necesita, cuando lo necesita.
+        </p>
+        <a
+          href="https://wa.me/"
+          target="_blank"
+          className="mt-6 bg-red-600 text-white px-6 py-3 rounded-2xl shadow-lg hover:bg-red-700 transition"
+        >
+          Contactanos por WhatsApp
+        </a>
+      </section>
+
+      <section className="py-20 px-6 bg-gray-100 text-center">
+        <h2 className="text-3xl font-semibold mb-6">¿Quiénes somos?</h2>
+        <p className="max-w-3xl mx-auto text-lg">
+          En InsumosCM funcionamos como tu departamento de compras externo. Somos una empresa con más de 2 años de experiencia, especializada en localizar productos difíciles de conseguir. También proveemos insumos de rotación y gestionamos cada pedido como si fuera propio.
+        </p>
+      </section>
+    </main>
+  );
+}
